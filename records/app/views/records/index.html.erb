@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Records</h1>
+<h1>Rock 'n Rails! - INDEX - route</h1>
 
 <table>
   <thead>
@@ -20,7 +20,7 @@
         <td><%= record.title %></td>
         <td><%= record.artist %></td>
         <td><%= record.year %></td>
-        <td><%= record.cover_art %></td>
+        <td><img class="list_img" src="<%= record.cover_art %>" /></td>
         <td><%= record.song_count %></td>
         <td><%= link_to 'Show', record %></td>
         <td><%= link_to 'Edit', edit_record_path(record) %></td>
